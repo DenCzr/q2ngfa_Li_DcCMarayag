@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(239, 247, 207);
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon{
+    background: url(../images/sprite.png);
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+
+#soundcloud{
+    background-position: -587px -72px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+
+#twit{
+    background-position: -66px -72px;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: rgb(37, 114, 88);
+    }
+    .pagetile{
+        background-color: blueviolet;
+        padding: 1vw;
+        color: black;
+    }
+    
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: blueviolet;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .links a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+    .links a:hover{background-color: #ddd; transition: .5s;}
+    nav:hover .links{display: block; transition: .5s;}
+    nav:hover .pagetile{background-color: blanchedalmond; transition: .5s;}
+}
+
